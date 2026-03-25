@@ -70,7 +70,7 @@ https://rockblack.pro/ip-address
 Затем следующую команду скопировать и вставить в console
 ```
 window.domains = [...new Set(performance.getEntriesByType('resource').map(r => (new URL(r.name)).hostname))];
-console.log(domains);
+console.log(domains.join('\n'));
 ```
 Полученные домены скопировать и вставить в https://rockblack.pro/ip-address
 
